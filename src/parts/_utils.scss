@@ -1,23 +1,31 @@
-.p-0 { padding: $size0; }
-.p-1 { padding: $size1; }
-.p-2 { padding: $size2; }
-.p-3 { padding: $size3; }
-.p-4 { padding: $size4; }
-.p-5 { padding: $size5; }
-
-.m-0 { margin: $size0; }
-.m-1 { margin: $size1; }
-.m-2 { margin: $size2; }
-.m-3 { margin: $size3; }
-.m-4 { margin: $size4; }
-.m-5 { margin: $size5; }
+@each $key, $val in $sizes {
+    .p-#{$key} { padding: $val; }
+    .px-#{$key} { padding-left: $val; padding-right: $val; }
+    .py-#{$key} { padding-top: $val; padding-bottom: $val; }
+    .pt-#{$key} { padding-top: $val; }
+    .pb-#{$key} { padding-bottom: $val; }
+    .pl-#{$key} { padding-left: $val; }
+    .pr-#{$key} { padding-right: $val; }
+    
+    .m-#{$key} { margin: $val; }
+    .mx-#{$key} { margin-left: $val; margin-right: $val; }
+    .my-#{$key} { margin-top: $val; margin-bottom: $val; }
+    .mt-#{$key} { margin-top: $val; }
+    .mb-#{$key} { margin-bottom: $val; }
+    .ml-#{$key} { margin-left: $val; }
+    .mr-#{$key} { margin-right: $val; }
+}
 
 .m-auto {
     margin: auto;
 }
 
-
 .shadow-0 { box-shadow: $shadow0;}
 .shadow-1 { box-shadow: $shadow1;}
 .shadow-2 { box-shadow: $shadow2;}
 .shadow-3 { box-shadow: $shadow3;}
+
+
+
+.edgy { border-radius: 0; }
+.rounded { border-radius: $size4; }

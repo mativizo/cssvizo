@@ -1,10 +1,29 @@
-.text-primary { color: $primary; }
-.text-secondary { color: $secondary; }
-.text-red { color: $red; }
-.text-green { color: $green; }
-.text-blue { color: $blue; }
-.text-orange { color: $orange; }
-.text-purple { color: $purple; }
-.text-pink { color: $pink; }
-.text-light { color: $light; }
-.text-dark { color: $dark; }
+@each $key, $val in $colors {
+    .text-#{$key} {
+        color: $val;
+    }
+    
+    .bg-#{$key} {
+        background-color: darken($val, 10%);
+        border-color: darken($val, 5%);
+    }
+    
+    .border-#{$key} {
+        border: $bordersize solid darken($val, 5%);
+    }
+    
+    .btn-#{$key} {
+        @extend .btn;
+        background-color: $val;
+        border-color: $val;
+        @if "light" == $key {
+            color: $black;        
+        }
+
+        &-outline {
+            @extend .btn;
+            background-color: $darker;
+            color: $light;            
+        }
+    }
+}

@@ -10,15 +10,14 @@
 // Layouts
 @import 'parts/containers';
 
-// Colors
-@import 'parts/backgrounds';
-@import 'parts/colors';
-
 // Elements
 @import 'parts/buttons';
 @import 'parts/cards';
+@import 'parts/headers';
 @import 'parts/notifications';
 
+// Colors
+@import 'parts/colors';
 
 // Utilities
 @import 'parts/utils';

@@ -1,12 +1,12 @@
 .btn, button {
-    padding: $size1 $size3;
+    padding: $size1;
     margin: $size1;
     background-color: $primary;
-    border-radius: $size4;
     border-width: $bordersize;
     border-style: solid;
     border-color: $primary;
     font-weight: bold;
+    border-radius: $size1;
     line-height: 1rem;
     display: inline-block;
     box-shadow: $shadow3;
@@ -18,39 +18,14 @@
     border-color: $primary;
 }
 
-.btn-secondary {
-    @extend .btn;
-    background-color: $secondary;
-    border-color: $secondary;
-}
-
-.btn-secondary-outline {
-    @extend .btn-outline;
-    background-color: $darker;
-    border-color: $secondary;
-}
-
-.btn-light {
-    @extend .btn;
-    background-color: $light;
-    border-color: darken($light, 10%);
-    color: #000000;
-}
-
-.btn-light-outline {
-    @extend .btn-outline;
-    border-color: $light;
-    color: lighten($light, 20%);
-}
-
 .btn-sm {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     box-shadow: $shadow1;
-    padding: $size0 $size2;
+    padding: 0.1em 0.3rem;
 }
 
 .btn-lg {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: $size2 $size4;
 }
 

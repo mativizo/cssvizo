@@ -14,6 +14,30 @@ $lighter: #FFFFFF0c;
 $lighter2: #FFFFFF55;
 $darker: #0000000c;
 $darker2: #00000055;
+$white: #fff;
+$black: #000;
+
+// Color map
+$colors: (
+    "background": $background,    
+    "primary": $primary,
+    "secondary": $secondary,
+    "red": $red,
+    "green": $green,
+    "blue": $blue,
+    "orange": $orange,
+    "purple": $purple,
+    "pink": $pink,
+    "light": $light,
+    "dark": $dark,
+    "lighter": $lighter,
+    "ligher2": $lighter2,
+    "darker": $darker,
+    "darker2": $darker2,
+    "black": $black,
+    "white": $white
+);
+
 
 // SIZES
 $size0: 0rem;
@@ -23,6 +47,15 @@ $size2: $sizebase - 0.3rem;
 $size3: $sizebase;
 $size4: $sizebase + 0.3rem;
 $size5: $sizebase + 0.7rem;
+
+$sizes: (
+    "0": $size0,
+    "1": $size1,
+    "2": $size2,
+    "3": $size3,
+    "4": $size4,
+    "5": $size5,
+);
 
 // Shadows
 $shadow0: none;
