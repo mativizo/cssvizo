@@ -1,0 +1,29 @@
+.notify {
+    padding: $size3;
+    border: $bordersize solid lighten($primary, 10%);
+    background-color: darken($primary, 10%);
+    margin: $size1;
+    border-radius: $size2;
+    position: relative;
+
+    .close {
+        position: absolute;
+        right: $size1;
+        top: $size0;
+        padding: $size1;
+        cursor: pointer;
+
+    }
+    
+    .content {
+        margin: $size1 $size0;
+        color: lighten($primary, 35%);
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: $size1;
+        font-weight: bold;
+        color: lighten($primary, 45%);
+    }
+}

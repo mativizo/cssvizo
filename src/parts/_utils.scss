@@ -1,0 +1,23 @@
+.p-0 { padding: $size0; }
+.p-1 { padding: $size1; }
+.p-2 { padding: $size2; }
+.p-3 { padding: $size3; }
+.p-4 { padding: $size4; }
+.p-5 { padding: $size5; }
+
+.m-0 { margin: $size0; }
+.m-1 { margin: $size1; }
+.m-2 { margin: $size2; }
+.m-3 { margin: $size3; }
+.m-4 { margin: $size4; }
+.m-5 { margin: $size5; }
+
+.m-auto {
+    margin: auto;
+}
+
+
+.shadow-0 { box-shadow: $shadow0;}
+.shadow-1 { box-shadow: $shadow1;}
+.shadow-2 { box-shadow: $shadow2;}
+.shadow-3 { box-shadow: $shadow3;}

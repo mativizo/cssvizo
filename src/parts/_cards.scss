@@ -1,0 +1,18 @@
+.card {
+    display: block;
+    padding: $size3;
+    box-shadow: $shadow2;
+    background-color: $lighter;
+
+    .title {
+        font-weight: bold;
+        margin-bottom: $size3;
+        
+    }
+
+    .body {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+

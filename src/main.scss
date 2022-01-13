@@ -1,0 +1,24 @@
+// Import Default Google Font
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+// Variables and functions
+@import 'parts/variables';
+
+// Reset
+@import 'parts/reset';
+
+// Layouts
+@import 'parts/containers';
+
+// Colors
+@import 'parts/backgrounds';
+@import 'parts/colors';
+
+// Elements
+@import 'parts/buttons';
+@import 'parts/cards';
+@import 'parts/notifications';
+
+
+// Utilities
+@import 'parts/utils';

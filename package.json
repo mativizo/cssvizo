@@ -1,0 +1,27 @@
+{
+  "name": "cssvizo",
+  "description": "CSSVizo Utility CSS Library",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.48.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mativizo/cssvizo.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Mativizo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mativizo/cssvizo/issues"
+  },
+  "homepage": "https://github.com/mativizo/cssvizo#readme"
+}

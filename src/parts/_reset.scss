@@ -1,18 +1,16 @@
-// Import Default Google Font
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-
 // Reset Styles
 * {
     color: inherit;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-size: 1.2em;
     font-family: 'Nunito', sans-serif;
-    color: #fff;
-    background-color: #233053;
+    color: $light;
+    background-color: $background;
 }
 
 ul {
@@ -25,7 +23,7 @@ a {
 
 hr {
     border: none;
-    border-bottom: 1px dotted #2d62a7;
+    border-bottom: 1px dotted $secondary;
 }
 
 img {
