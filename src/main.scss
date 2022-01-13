@@ -4,11 +4,17 @@
 // Variables and functions
 @import 'parts/variables';
 
+// Breakpoints
+@import 'parts/breakpoints';
+
 // Reset
 @import 'parts/reset';
 
 // Layouts
 @import 'parts/containers';
+
+// Grid
+@import 'parts/grid';
 
 // Elements
 @import 'parts/buttons';

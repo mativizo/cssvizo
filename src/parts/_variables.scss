@@ -1,19 +1,19 @@
 // COLORS
 $background: #151515;
-$primary: #5325be;
+$primary: rgb(115, 62, 240);
 $secondary: #383838;
-$red: #a01c1c;
-$green: #188809;
-$blue: #094f88;
-$orange: #af5a14;
-$purple: #8b14af;
+$red: #e92f2f;
+$green: #2aa51a;
+$blue: #2476b9;
+$orange: #db711a;
+$purple: #b317e2;
 $pink: #af1480;
 $light: #eee;
-$dark: #111;
-$lighter: #FFFFFF0c;
-$lighter2: #FFFFFF55;
-$darker: #0000000c;
-$darker2: #00000055;
+$dark: #050505;
+$lighter: #FFFFFF20;
+$lighter-2: #FFFFFFaa;
+$darker: #00000020;
+$darker-2: #000000aa;
 $white: #fff;
 $black: #000;
 
@@ -31,9 +31,9 @@ $colors: (
     "light": $light,
     "dark": $dark,
     "lighter": $lighter,
-    "ligher2": $lighter2,
+    "ligher-2": $lighter-2,
     "darker": $darker,
-    "darker2": $darker2,
+    "darker-2": $darker-2,
     "black": $black,
     "white": $white
 );

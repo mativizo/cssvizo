@@ -4,4 +4,9 @@
 }
 .container {
     max-width: 960px;
+
+    @include sm { max-width: map-get($breakpoints, 'sm'); }
+    @include md { max-width: map-get($breakpoints, 'md'); }
+    @include lg { max-width: map-get($breakpoints, 'lg'); }
+    @include xl { max-width: map-get($breakpoints, 'xl'); }
 }

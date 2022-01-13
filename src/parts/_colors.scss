@@ -4,8 +4,8 @@
     }
     
     .bg-#{$key} {
-        background-color: darken($val, 10%);
-        border-color: darken($val, 5%);
+        background-color: darken($val, 15%);
+        border-color: darken($val, 10%);
     }
     
     .border-#{$key} {
@@ -21,9 +21,10 @@
         }
 
         &-outline {
-            @extend .btn;
+            @extend .btn-outline;
             background-color: $darker;
-            color: $light;            
+            color: $light;
+            border-color: darken($val, 5%);
         }
     }
 }

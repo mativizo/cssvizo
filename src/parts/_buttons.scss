@@ -31,9 +31,9 @@
 
 button:disabled, .btn-disabled {
     @extend .btn;
-    background-color: $darker2;
+    background-color: $darker-2;
     cursor:not-allowed;
     border: none;
-    color: $lighter2;
+    color: $lighter-2;
     text-decoration: line-through;
 }

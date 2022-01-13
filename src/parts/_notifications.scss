@@ -2,9 +2,9 @@
     padding: $size3;
     border: $bordersize solid lighten($primary, 10%);
     background-color: darken($primary, 10%);
-    margin: $size1;
-    border-radius: $size2;
     position: relative;
+    border-radius: $size1;
+    margin: $size1 auto;
 
     .close {
         position: absolute;
