@@ -1,0 +1,13 @@
+@mixin scrollbar($fgcolor: lighten($background, 15%), $bgcolor: lighten($background, 5%), $size: $size2) {
+    &::-webkit-scrollbar { width:  $size; height: $size; }
+    &::-webkit-scrollbar-thumb { background: $fgcolor; }
+    &::-webkit-scrollbar-track { background: $bgcolor; }
+    & {
+        scrollbar-face-color: $fgcolor;
+        scrollbar-track-color: $bgcolor;
+    }
+}
+
+body, .electron-main {
+    @include scrollbar();
+}

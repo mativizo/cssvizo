@@ -17,7 +17,11 @@
         background-color: $val;
         border-color: $val;
         @if "light" == $key {
-            color: $black;        
+            color: $black;
+        }
+
+        &:hover, &:active, &:focus {
+            @include hover-button($val);
         }
 
         &-outline {
@@ -25,6 +29,18 @@
             background-color: $darker;
             color: $light;
             border-color: darken($val, 5%);
+            @if "light" == $key {
+                background-color: $dark;
+            }
+            
+
+            &:hover, &:active, &:focus {
+                @include hover-button-outline($val);
+                @if "light" == $key {
+                    background-color: $light;
+                    color: $dark;
+                }
+            }
         }
     }
 }

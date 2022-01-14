@@ -1,25 +1,30 @@
 // COLORS
-$background: #151515;
-$primary: rgb(115, 62, 240);
-$secondary: #383838;
-$red: #e92f2f;
-$green: #2aa51a;
+$background: #0e1d30;
+$gray-1: #aabbff10;
+$gray-2: #bbccff20;
+$gray-3: #ccddff30;
+$primary: rgb(50, 54, 153);
+$secondary: rgb(37, 39, 97);
+$red: #db0028;
+$green: #0f7e00;
 $blue: #2476b9;
-$orange: #db711a;
+$orange: #ec7e24;
 $purple: #b317e2;
 $pink: #af1480;
-$light: #eee;
-$dark: #050505;
-$lighter: #FFFFFF20;
-$lighter-2: #FFFFFFaa;
-$darker: #00000020;
-$darker-2: #000000aa;
+$glass: #FFFFFF22;
+$light: #ddd;
+$dark: #193253;
+$darker: #000000aa;
 $white: #fff;
 $black: #000;
+$muted: #aaa;
 
 // Color map
 $colors: (
     "background": $background,    
+    "gray-1": $gray-1,
+    "gray-2": $gray-2,
+    "gray-3": $gray-3,
     "primary": $primary,
     "secondary": $secondary,
     "red": $red,
@@ -29,24 +34,24 @@ $colors: (
     "purple": $purple,
     "pink": $pink,
     "light": $light,
+    "glass": $glass,
     "dark": $dark,
-    "lighter": $lighter,
-    "ligher-2": $lighter-2,
     "darker": $darker,
-    "darker-2": $darker-2,
     "black": $black,
-    "white": $white
+    "white": $white,
+    "muted": $muted
 );
 
 
 // SIZES
 $size0: 0rem;
-$sizebase: 1.3rem;
+$sizebase: 1rem;
 $size1: $sizebase - 0.7rem;
 $size2: $sizebase - 0.3rem;
 $size3: $sizebase;
-$size4: $sizebase + 0.3rem;
-$size5: $sizebase + 0.7rem;
+$size4: $sizebase + 0.5rem;
+$size5: $sizebase + 1rem;
+$size6: $sizebase + 1.5rem;
 
 $sizes: (
     "0": $size0,
@@ -55,6 +60,7 @@ $sizes: (
     "3": $size3,
     "4": $size4,
     "5": $size5,
+    "6": $size6
 );
 
 // Shadows
@@ -69,3 +75,37 @@ $shadow3: 0 4px 15px 3px #00000044;
 
 // Borders
 $bordersize: 3px;
+
+
+
+// Fonts
+$fontsmall: 0.7rem;
+$fontnormal: 1rem;
+$fontbig: 1.3rem;
+
+
+// Percentages
+$percentages: (
+    "0": 0%,
+    "5": 5%,
+    "10": 10%,
+    "15": 15%,
+    "20": 20%,
+    "25": 25%,
+    "30": 30%,
+    "35": 35%,
+    "40": 40%,
+    "45": 45%,
+    "50": 50%,
+    "55": 55%,
+    "60": 60%,
+    "65": 65%,
+    "70": 70%,
+    "75": 75%,
+    "80": 80%,
+    "85": 85%,
+    "90": 90%,
+    "95": 95%,
+    "100": 100%,
+)
+

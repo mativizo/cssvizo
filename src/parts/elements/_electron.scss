@@ -1,0 +1,39 @@
+.electron-titlebar {
+    -webkit-app-region: drag;
+    overflow: hidden;
+    box-shadow: $shadow3;
+    background-color: lighten($dark, 10%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .app-name { padding: $size2; }
+
+    .title {
+        padding: $size1;
+        color: $muted;
+    }
+
+    .controls {
+        -webkit-app-region: drag;
+
+        div {
+            padding: $size3;
+            margin-top: $size1;
+            margin-bottom: $size1;
+            display: inline-block;
+            &:hover, &:focus, &:active { background-color: $dark; }
+        }
+    }
+}
+
+.electron-footer {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow3;
+    background-color: $background;
+    width: 100%;   
+}

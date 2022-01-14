@@ -1,29 +1,25 @@
 // Import Default Google Font
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+// Import boostrap icons
+$bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d") format("woff2"),
+url("../node_modules/bootstrap-iconds/font/fonts/bootstrap-icons.woff?30af91bf14e37666a085fb8a161ff36d") format("woff");
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+
 // Variables and functions
 @import 'parts/variables';
 
-// Breakpoints
-@import 'parts/breakpoints';
+// Mixins
+@import 'parts/mixins';
 
 // Reset
 @import 'parts/reset';
 
 // Layouts
-@import 'parts/containers';
-
-// Grid
-@import 'parts/grid';
+@import 'parts/layouts/layouts';
 
 // Elements
-@import 'parts/buttons';
-@import 'parts/cards';
-@import 'parts/headers';
-@import 'parts/notifications';
+@import 'parts/elements/elements';
 
-// Colors
-@import 'parts/colors';
-
-// Utilities
-@import 'parts/utils';
+// Others
+@import 'parts/others/others'

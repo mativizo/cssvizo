@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mativizo/cssvizo/issues"
   },
-  "homepage": "https://github.com/mativizo/cssvizo#readme"
+  "homepage": "https://github.com/mativizo/cssvizo#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.7.2"
+  }
 }

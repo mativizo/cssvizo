@@ -1,26 +1,29 @@
 .btn, button {
-    padding: $size1;
-    margin: $size1;
+    padding: $size1 $size2;
+    margin: $size1 0;
     background-color: $primary;
     border-width: $bordersize;
     border-style: solid;
     border-color: $primary;
-    font-weight: bold;
     border-radius: $size1;
+    font-weight: bold;
     line-height: 1rem;
     display: inline-block;
-    box-shadow: $shadow3;
+    box-shadow: $shadow1;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    &:hover, &:active, &:focus { @include hover-button($primary); }
 }
 
 .btn-outline {
     @extend .btn;
-    background-color: $darker;
+    background-color: $glass;
     border-color: $primary;
 }
 
 .btn-sm {
     font-size: 0.8rem;
-    box-shadow: $shadow1;
     padding: 0.1em 0.3rem;
 }
 
@@ -31,9 +34,9 @@
 
 button:disabled, .btn-disabled {
     @extend .btn;
-    background-color: $darker-2;
+    background-color: $darker;
     cursor:not-allowed;
     border: none;
-    color: $lighter-2;
+    color: $glass;
     text-decoration: line-through;
 }

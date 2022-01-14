@@ -1,0 +1,11 @@
+@mixin hover-button($color) {
+    background-color: darken($color, 8%);
+    border-color: darken($color, 8%);
+    box-shadow: $shadow2;
+}
+
+@mixin hover-button-outline($color) {
+    background-color: darken($color, 30%);
+    border-color: darken($color, 30%);
+    box-shadow: $shadow2;
+}

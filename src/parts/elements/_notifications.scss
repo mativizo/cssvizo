@@ -1,18 +1,19 @@
 .notify {
-    padding: $size3;
-    border: $bordersize solid lighten($primary, 10%);
+    padding: $size3 $size5;
     background-color: darken($primary, 10%);
     position: relative;
     border-radius: $size1;
     margin: $size1 auto;
+    box-shadow: $shadow3;
 
     .close {
+        @extend .bi;
+        @extend .bi-x-lg;
         position: absolute;
-        right: $size1;
-        top: $size0;
-        padding: $size1;
+        right: $size2;
+        top: $size2;
         cursor: pointer;
-
+        font-size: $size3;
     }
     
     .content {

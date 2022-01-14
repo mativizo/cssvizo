@@ -1,0 +1,149 @@
+@use 'sass:math';
+
+$columns: 12;
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+    @include xs {
+        @for $i from 1 through $columns {
+            .col-xs-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * 100%, $columns);
+            }
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            flex-grow: 0;
+            width: math.div($i * 100%, $columns);
+        }
+    }
+    
+    @include sm {
+        @for $i from 1 through $columns {
+            .col-sm-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * 100%, $columns);
+            }
+        }
+    }
+    
+    @include md {
+        @for $i from 1 through $columns {
+            .col-md-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * 100%, $columns);
+            }
+        }
+    }
+    
+    @include lg {
+        @for $i from 1 through $columns {
+            .col-lg-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * 100%, $columns);
+            }
+        }
+    }
+    
+    @include xl {
+        @for $i from 1 through $columns {
+            .col-xl-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * 100%, $columns);
+            }
+        }
+    }
+}
+
+
+
+
+
+// Masonry
+.masonry-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    div {
+        width: 150px;
+        margin: 0 1rem 1rem 0;
+    } 
+    
+    @for $i from 1 through 36 { 
+        div:nth-child(#{$i}) {
+            $h: (random(400) + 100) + px;
+            height: $h;
+            line-height: $h;
+        }
+    }
+}
+
+.square-grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    
+    @include xs {
+        @for $i from 1 through $columns {
+            .s-xs-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * map-get($breakpoints, 'xs'), $columns);
+                height: math.div($i * map-get($breakpoints, 'xs'), $columns);
+            }
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .s-#{$i} {
+            flex-grow: 0;
+            justify-content: center;
+            width: math.div($i * map-get($breakpoints, 'lg'), $columns);
+            height: math.div($i * map-get($breakpoints, 'lg'), $columns);
+        }
+    }
+    
+    @include sm {
+        @for $i from 1 through $columns {
+            .s-sm-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * map-get($breakpoints, 'sm'), $columns);
+                height: math.div($i * map-get($breakpoints, 'sm'), $columns);
+            }
+        }
+    }
+    
+    @include md {
+        @for $i from 1 through $columns {
+            .s-md-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * map-get($breakpoints, 'md'), $columns);
+                height: math.div($i * map-get($breakpoints, 'md'), $columns);
+            }
+        }
+    }
+    
+    @include lg {
+        @for $i from 1 through $columns {
+            .s-lg-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * map-get($breakpoints, 'lg'), $columns);
+                height: math.div($i * map-get($breakpoints, 'lg'), $columns);
+            }
+        }
+    }
+    
+    @include xl {
+        @for $i from 1 through $columns {
+            .s-xl-#{$i} {
+                flex-grow: 0;
+                width: math.div($i * map-get($breakpoints, 'xl'), $columns);
+                height: math.div($i * map-get($breakpoints, 'xl'), $columns);
+            }
+        }
+    }
+}

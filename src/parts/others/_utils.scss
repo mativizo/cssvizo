@@ -26,6 +26,31 @@
 .shadow-3 { box-shadow: $shadow3;}
 
 
-
+// Corners
 .edgy { border-radius: 0; }
 .rounded { border-radius: $size4; }
+
+
+// Hide and show
+.hide { display: none; }
+.show { display: block; }
+
+// Displays
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline-block { display: inline-block; }
+.d-inline { display: inline; }
+.d-flex { display: flex; }
+
+
+// Text align
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+
+// height and widths
+@each $key, $val in $percentages {
+    .w-#{$key} { width: $val; }
+    .h-#{$key} { height: $val; min-height: $val; max-height: $val; }
+}
