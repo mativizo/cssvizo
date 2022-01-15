@@ -6,6 +6,10 @@
     .bg-#{$key} {
         background-color: darken($val, 15%);
         border-color: darken($val, 10%);
+
+        @if $key == "light" {
+            color: $black;
+        }
     }
     
     .border-#{$key} {
@@ -42,5 +46,49 @@
                 }
             }
         }
+    }
+
+    .switch-#{$key} {
+        @extend .switch;
+
+        & .slider {
+            border-color: mix($light, $val);
+        }
+
+        & .slider:before {
+            background-color: mix($light, $val);
+        }
+    
+        input:checked + .slider {
+            background-color: $val;
+            border-color: lighten($val, 10%);
+    
+            &:before { background-color: $light; }
+            @if $key == "light" {
+                &:before { background-color: $dark; }
+            }
+            
+        }
+        input:focus + .slider { border-color: $gray-3; }
+    }
+
+    .radios-#{$key} {
+        @extend .radios;
+
+        & .radio {
+            border-color: mix($light, $val);
+        }
+
+        input:checked + .radio {
+            background-color: $val;
+            border-color: lighten($val, 10%);
+    
+            &:before { background-color: $light; }
+            @if $key == "light" {
+                &:before { background-color: $dark; }
+            }
+            
+        }
+        input:focus + .radio { border-color: $gray-3; }
     }
 }

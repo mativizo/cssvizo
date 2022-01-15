@@ -1,4 +1,14 @@
 .bi {
+    @extend .bi;
     width: $size3;
     height: auto;
+
+    &-lg {
+        font-size: 2rem;
+    }
+
+    &-xl {
+        font-size: 4rem;
+    }
 }
+

@@ -1,0 +1,176 @@
+@use 'sass:math';
+
+label { padding: $size1 0; }
+textarea, select, input[type=text], input[type=password], input[type=list] {
+    margin: 0;
+    background-color: $gray-2;
+    border: $bordersize solid $gray-1;
+    border-radius: $size1;
+    padding: $size2;
+    font-size: $size3;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: $shadow1;
+}
+
+input[type=checkbox] {
+    padding: $size3;
+}
+
+.form-item {
+    padding: $size2;
+    display: flex;
+    flex-direction: column;
+
+    &-horizontal {
+        padding: 0;
+        flex-direction: row wrap;
+        flex-grow: 0;
+        justify-content: center;
+
+        & > * {
+            display: inline-block;
+        }
+    }
+}
+
+@mixin invisible-input() {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch {
+    @include disable-selecting();
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        display: flex;
+    }
+
+    .slider {
+        margin-right: $size3;
+        flex-grow: -1;
+        box-shadow: $shadow1;
+        display: block;
+        width: 50px;
+        height: 25px;
+        cursor: pointer;
+        background-color: $gray-2;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: $size1;
+        border-color: mix($light, $primary);
+        border-width: $bordersize;
+        border-style: solid;
+
+        &.rounded, &.rounded:before {
+            @extend .rounded;
+        }
+
+        &.edgy, &.edgy:before {
+            @extend .edgy;
+        }
+
+        &:before {
+            content: "";
+            border-radius: $size1;
+            display: block;
+            margin-top: 1px;
+            height: 17px;
+            width: 17px;
+            background-color: mix($light, $primary);
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    }
+
+    input:checked + .slider {
+        background-color: $primary;
+        border-color: lighten($primary, 10%);
+
+        &:before {
+            background-color: $light;
+        }
+    }
+      
+    input:focus + .slider {
+        border-color: $gray-3;
+    }
+
+    input:checked + .slider:before {
+        transform: translate(26px);
+    }
+}
+
+
+
+
+.radios {
+    @include disable-selecting();
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        display: flex;
+    }
+
+    .radio {
+        margin-right: $size3;
+        flex-grow: -1;
+        box-shadow: $shadow1;
+        display: block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        background-color: $gray-2;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: $size1;
+        border-color: mix($light, $primary);
+        border-width: $bordersize;
+        border-style: solid;
+
+        &.rounded, &.rounded:before {
+            @extend .rounded;
+        }
+
+        &.edgy, &.edgy:before {
+            @extend .edgy;
+        }
+
+        &:before {
+            content: "";
+            border-radius: $size1;
+            display: block;
+            margin-left: 2.8px;
+            margin-top: 2.8px;
+            height: 13.5px;
+            width: 13.5px;
+            background-color: rgba(0,0,0,0);
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    }
+
+    input:checked + .radio {
+        background-color: $primary;
+        border-color: lighten($primary, 10%);
+
+        &:before {
+            background-color: $light;
+        }
+    }
+      
+    input:focus + .radio {
+        border-color: $gray-3;
+    }
+}

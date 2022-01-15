@@ -9,3 +9,7 @@
     border-color: darken($color, 30%);
     box-shadow: $shadow2;
 }
+
+@mixin disable-selecting() {
+    user-select: none;
+}

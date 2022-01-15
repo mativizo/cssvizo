@@ -1,4 +1,5 @@
 .electron-titlebar {
+    @include disable-selecting();
     -webkit-app-region: drag;
     overflow: hidden;
     box-shadow: $shadow3;
@@ -7,10 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 35px;
+    padding: $size0;
 
-    .app-name { padding: $size2; }
+    .app-name {
+        padding: $size2;
+    }
 
     .title {
+        display: block;
         padding: $size1;
         color: $muted;
     }
@@ -23,7 +29,8 @@
             margin-top: $size1;
             margin-bottom: $size1;
             display: inline-block;
-            &:hover, &:focus, &:active { background-color: $dark; }
+            font-size: $size2;
+            &:hover, &:focus, &:active { background-color: $gray-3; }
         }
     }
 }

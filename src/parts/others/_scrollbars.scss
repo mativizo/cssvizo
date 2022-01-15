@@ -8,6 +8,6 @@
     }
 }
 
-body, .electron-main {
+* {
     @include scrollbar();
 }
