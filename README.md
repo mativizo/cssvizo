@@ -20,3 +20,4 @@ Library uses GULP and Sass to build styles and Bootstrap Icons as... icons.
 
 ## But...
 Examples are in `examples` directory. 😉
+Every element is listed on [Mini Documentation](https://mativizo.github.io/cssvizo/)
