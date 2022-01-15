@@ -7,7 +7,7 @@
         background-color: darken($val, 15%);
         border-color: darken($val, 10%);
 
-        @if $key == "light" {
+        @if ($key == "light" or $key == "white") {
             color: $black;
         }
     }
@@ -20,7 +20,7 @@
         @extend .btn;
         background-color: $val;
         border-color: $val;
-        @if "light" == $key {
+        @if ($key == "light" or $key == "white") {
             color: $black;
         }
 
@@ -30,17 +30,17 @@
 
         &-outline {
             @extend .btn-outline;
-            background-color: $darker;
-            color: $light;
+            background-color: rgba(0,0,0,0.1);
+            color: mix($light, $val);
             border-color: darken($val, 5%);
-            @if "light" == $key {
+            @if ($key == "light" or $key == "white") {
                 background-color: $dark;
             }
             
 
             &:hover, &:active, &:focus {
                 @include hover-button-outline($val);
-                @if "light" == $key {
+                @if ($key == "light" or $key == "white") {
                     background-color: $light;
                     color: $dark;
                 }
@@ -64,7 +64,7 @@
             border-color: lighten($val, 10%);
     
             &:before { background-color: $light; }
-            @if $key == "light" {
+            @if ($key == "light" or $key == "white") {
                 &:before { background-color: $dark; }
             }
             
@@ -84,7 +84,7 @@
             border-color: lighten($val, 10%);
     
             &:before { background-color: $light; }
-            @if $key == "light" {
+            @if ($key == "light" or $key == "white") {
                 &:before { background-color: $dark; }
             }
             

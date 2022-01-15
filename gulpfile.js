@@ -1,16 +1,27 @@
-const { src, dest, watch, series } = require('gulp')
+const { src, dest, watch, series, task } = require('gulp')
 const sassCompiler = require('sass')
 const sass = require('gulp-sass')(sassCompiler)
 const path = require('path')
+const rename = require('gulp-rename')
 
-const mainPath = path.join(__dirname, "src")
-const mainFile = path.join(mainPath, "main.scss")
-const partsPath = path.join(mainPath, "parts")
+
+const mainFile = path.join(__dirname, "src/main.scss")
+const outputPath = path.join(__dirname, "css")
+const name = "cssvizo"
+
 
 const buildStyles = () => {
     return src(mainFile)
         .pipe(sass())
-        .pipe(dest('css'))
+        .pipe(rename(`${name}.css`))
+        .pipe(dest(outputPath))
+}
+
+const minifyStyles = () => {
+    return src(path.join(outputPath, `${name}.css`))
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(rename(`${name}.min.css`))
+        .pipe(dest(outputPath))
 }
 
 const watchStyles = () => {
@@ -18,3 +29,4 @@ const watchStyles = () => {
 }
 
 exports.default = series(buildStyles, watchStyles)
+exports.build = series(buildStyles, minifyStyles)
