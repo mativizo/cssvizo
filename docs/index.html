@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,99 @@
     <title>CSSVizo</title>
     <link rel="stylesheet" href="css/cssvizo.min.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid py-4">
         <h1 class="text-center">CSSVizo</h1>
+
+        <p class="text-center">Welcome to CSSVizo - messy, not-good-enough CSS library for doodling on websites and
+            Electron apps.</p>
+
+        <div class="bg-gray-1 p-3 text-center">
+            <p>Contents:</p>
+
+            <a class="btn" href="#badges">Badges</a>
+            <a class="btn" href="#breakpoints">Breakpoints</a>
+            <a class="btn" href="#buttons">Buttons</a>
+            <a class="btn" href="#cards">Cards *</a>
+            <a class="btn" href="#colors">Colors *</a>
+            <a class="btn" href="#containers">Containers *</a>
+            <a class="btn" href="#electron">Electron *</a>
+            <a class="btn" href="#forms">Forms *</a>
+            <a class="btn" href="#grids">Grids *</a>
+            <a class="btn" href="#headers">Headers *</a>
+            <a class="btn" href="#images">Images *</a>
+            <a class="btn" href="#navbars">Navbars *</a>
+            <a class="btn" href="#notifications">Notifications *</a>
+            <a class="btn" href="#paragraphs">Paragraphs *</a>
+            <a class="btn" href="#paragraphs">Paragraphs *</a>
+            <a class="btn" href="#scrollbars">Scrollbars *</a>
+            <a class="btn" href="#Utils">Utils *</a>
+
+            <p class="text-muted">Links with * are still to-do.</p>
+        </div>
+
+        <div class="row mt-5">
+            <!-- BADGES -->
+            <div class="col-12 col-md-6 p-1">
+                <div class="bg-gray-2 p-3 h-100">
+                    <h3 id="badges">Badges</h3>
+                    <p>You can use class .badge with various background colors.</p>
+                    <p>Red badge <span class="badge bg-red">14</span></p>
+                    <p>Default badge <span class="badge">524</span></p>
+                    <p>
+                        <code>&lt;span class="badge"&gt;432&lt;/span&gt;</code>
+                    </p>
+                </div> <!-- inner col -->
+            </div> <!-- col -->
+
+
+
+            <!-- BREAKPOINTS -->
+            <div class="col-12 col-md-6 p-1">
+                <div class="bg-gray-2 p-3 h-100">
+                    <h3 id="breakpoints">Breakpoints</h3>
+                    <p>In CSSVizo we have 5 breakpoints:</p>
+                    <p>Extra small: <code>.something-xs</code></p>
+                    <p>Small: <code>.something-sm</code></p>
+                    <p>Medium: <code>.something-md</code></p>
+                    <p>Large: <code>.something-lg</code></p>
+                    <p>Extra large: <code>.something-xl</code></p>
+                </div> <!-- inner col -->
+            </div> <!-- col -->
+
+
+
+            <!-- BUTTONS -->
+            <div class="col-12 col-md-6 p-1">
+                <div class="bg-gray-2 p-3">
+                    <h3 id="buttons">Buttons</h3>
+                    <p>You can use few button classes.</p>
+                    <p>
+                        <button>Primary</button>
+                        <code class="ml-2">&lt;button&gt;Primary&lt;/button"&gt;</code>
+                    </p>
+                    <p>
+                        <button class="btn-red">Red</button>
+                        <code class="ml-2">&lt;button class="btn-{color}&gt;Colored"&lt;/button&gt;</code>
+                    </p>
+                    <p>
+                        <button class="btn-red-outline">Outline</button>
+                        <code
+                            class="ml-2">&lt;button class="btn-{color}-outline"&gt;Colored & outlined&lt;/button&gt;</code>
+                    </p>
+                    <p>
+                        <button class="btn-lg">Big</button>
+                        <code class="ml-2">&lt;button class="btn-lg"&gt;Big one&lt;/button&gt;</code>
+                    </p>
+                    <p>
+                        <button class="btn-sm">Small</button>
+                        <code class="ml-2">&lt;button class="btn-sm"&gt;Small button&lt;/button&gt;</code>
+                    </p>
+                </div> <!-- inner col -->
+            </div> <!-- col -->
+        </div> <!-- row -->
     </div>
 </body>
+
 </html>
