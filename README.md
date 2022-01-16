@@ -35,5 +35,4 @@ Add minified file from CDN:
 4. Use watch or build task to create files (`npm start` - watch, `npm run build` - build).
 
 ## But...
-Examples are in `examples` directory. 😉
-Every element is listed on [Mini Documentation](https://mativizo.github.io/cssvizo/)
+😎 Every element is listed on [Mini Documentation](https://mativizo.github.io/cssvizo/)
