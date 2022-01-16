@@ -1,6 +1,8 @@
 # cssvizo
 CSSVizo Utility CSS Library
 
+![npm (scoped)](https://img.shields.io/npm/v/@mativizo/cssvizo)
+
 ## What is it?
 Simple CSS Library for basic UI - websites and Electron.
 I'm using it for prototyping.
@@ -8,9 +10,23 @@ I'm using it for prototyping.
 Library uses GULP and Sass to build styles and Bootstrap Icons as... icons.
 
 ### How to use?
+
 1. Download files from `css` directory or clone the repo and build files by yourself.
 2. Add `css/cssvizo.css` or `css/cssvizo.min.css` (minifed) to your project.
 3. Enjoy!
+
+**or**
+
+Add file from CDN: 
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mativizo/cssvizo@0.0.1/css/cssvizo.css">
+```
+
+Add minified file from CDN:
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mativizo/cssvizo@0.0.1/css/cssvizo.min.css">
+```
+
 
 #### How to build / edit?
 1. Clone the repo `git clone https://github.com/mativizo/cssvizo.git`.
