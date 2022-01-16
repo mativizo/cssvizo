@@ -6,6 +6,7 @@ const rename = require('gulp-rename')
 
 
 const mainFile = path.join(__dirname, "src/main.scss")
+const partsPath = path.join(__dirname, "src/parts")
 const outputPath = path.join(__dirname, "css")
 const name = "cssvizo"
 

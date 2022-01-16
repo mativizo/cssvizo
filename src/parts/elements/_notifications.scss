@@ -8,7 +8,7 @@
 
     .close {
         @extend .bi;
-        @extend .bi-x-lg;
+        @extend .bi-x-lg !optional;
         position: absolute;
         right: $size2;
         top: $size2;
