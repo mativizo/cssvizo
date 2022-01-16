@@ -11,6 +11,10 @@
             color: $black;
         }
     }
+
+    .scrollbar-#{$key} {
+        @include scrollbar(lighten($val, 15%), lighten($val, 5%), $size2);
+    }
     
     .border-#{$key} {
         border: $bordersize solid darken($val, 5%);

@@ -1,6 +1,7 @@
 img {
-    width: auto;
-    height: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
     display: block;
     box-shadow: $shadow2;
 }
@@ -12,4 +13,8 @@ img {
     background-attachment: scroll;
 
     box-shadow: $shadow3;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
 }
