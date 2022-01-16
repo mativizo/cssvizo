@@ -1,7 +1,7 @@
 {
-  "name": "cssvizo",
+  "name": "@mativizo/cssvizo",
   "description": "CSSVizo Utility CSS Library",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^4.0.2",
