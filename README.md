@@ -29,6 +29,11 @@ Add minified file from CDN:
 
 
 #### How to build / edit?
+**with npm**
+1. Install package `npm install @mativizo/cssvizo`.
+2. Do, what you have to do.
+
+**or with git**
 1. Clone the repo `git clone https://github.com/mativizo/cssvizo.git`.
 2. Install dependencies `npm install`.
 3. Add changes to `.scss` files (`src/parts/...`).
